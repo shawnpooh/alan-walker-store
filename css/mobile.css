@@ -42,7 +42,7 @@ main #img-gallery ul {
   flex-direction: column;
 }
 
-.menu a {
+footer .menu a {
   margin: 0;
 }
 
