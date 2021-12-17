@@ -129,33 +129,6 @@ main {
   padding: 50px;
 }
 
-main #drone-repair-shop ul {
-  grid-gap: 0.7em;
-}
-
-main #drone-repair-shop .first-row {
-  margin-top: 1.5em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-main #drone-repair-shop .second-row {
-  margin: 3em 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-main #drone-repair-shop ul li img,
-main #news ul li img {
-  border: 2px solid #121212;
-}
-
-main #news ul li img {
-  display: block;
-  max-width: 326.58px;
-  max-height: 424.72px;
-}
-
 main ul a:hover p {
   text-decoration: underline 1px;
   text-underline-offset: 4px;
@@ -165,7 +138,23 @@ main ul p {
   margin: 1em 0;
 }
 
-main #news ul {
+#drone-repair-shop ul {
+  grid-gap: 0.7em;
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#drone-repair-shop ul li {
+  margin-bottom: 3em;
+}
+
+#drone-repair-shop ul li img,
+#news ul li img {
+  border: 2px solid #121212;
+}
+
+#news ul {
   margin-top: 1.5em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -180,47 +169,57 @@ main #img-gallery ul {
   grid-template-areas:
     'img-1 img-2 img-2'
     'img-3 img-3 img-4'
-    'img-5 img-6 img-6'
-    'img-7 img-7 img-8'
-    'img-9 img-10 img-10';
+    'img-3 img-3 img-5'
+    'img-6 img-7 img-7'
+    'img-8 img-8 img-9'
+    'img-8 img-8 img-10';
 }
 
 #img-gallery #img-1 {
   background: url(../img/image-1.jpeg) no-repeat center/cover;
   grid-area: img-1;
 }
+
 #img-gallery #img-2 {
   background: url(../img/image-2.jpeg) no-repeat center/cover;
   grid-area: img-2;
 }
+
 #img-gallery #img-3 {
   background: url(../img/image-3.jpeg) no-repeat center/cover;
   grid-area: img-3;
 }
+
 #img-gallery #img-4 {
   background: url(../img/image-4.jpeg) no-repeat center/cover;
   grid-area: img-4;
 }
+
 #img-gallery #img-5 {
   background: url(../img/image-5.jpeg) no-repeat center/cover;
   grid-area: img-5;
 }
+
 #img-gallery #img-6 {
   background: url(../img/image-6.jpeg) no-repeat center/cover;
   grid-area: img-6;
 }
+
 #img-gallery #img-7 {
   background: url(../img/image-7.jpeg) no-repeat center/cover;
   grid-area: img-7;
 }
+
 #img-gallery #img-8 {
   background: url(../img/image-8.jpeg) no-repeat center/cover;
   grid-area: img-8;
 }
+
 #img-gallery #img-9 {
   background: url(../img/image-9.jpeg) no-repeat center/cover;
   grid-area: img-9;
 }
+
 #img-gallery #img-10 {
   background: url(../img/image-10.jpeg) no-repeat center/cover;
   grid-area: img-10;
@@ -237,12 +236,67 @@ footer h3 {
   margin-bottom: 1.5em;
 }
 
-footer .menu {
+.menu {
   display: flex;
   justify-content: center;
 }
 
-footer .menu + a {
-  text-align: center;
+.menu + a {
   display: inline-block;
+  margin-bottom: 3em;
+}
+
+.follow-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow-us ul a {
+  color: #fff;
+}
+
+.follow-us div {
+  text-align: start;
+}
+
+.follow-us label {
+  display: block;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.follow-us input {
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 1em 1em;
+  width: 25em;
+  border: 2px solid #949494;
+  background: #121212;
+  color: #fff;
+}
+
+.follow-us input:focus:hover {
+  border: 2px solid #fff;
+}
+
+.follow-us input:focus {
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.follow-us input:hover {
+  border: 2px solid #b4b4b4;
+}
+
+.follow-us ul {
+  align-self: end;
+}
+
+.follow-us ul li a {
+  padding: 1em;
+}
+
+.follow-us ul li a:hover {
+  color: #949494;
 }
